@@ -1,0 +1,109 @@
+.titulo{
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.titulo-frontal{
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace ;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.titulo-play{
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+
+.texto-lateral{
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 19px;
+}
+.texto{
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 23px;
+}
+
+
+#icon-dev{
+    border-radius: 50%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    list-style:none;
+}
+
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    list-style:none;
+}
+#menu li a{
+    color: black;
+    text-decoration: none;
+    padding: 25px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;   
+}
+#menu li a:hover{
+  color:chocolate;
+}
+
+
+.p-30{
+    padding: 30px;
+}
+
+.center{
+    text-align: center;
+}
+
+#sobremim{
+    width: 400px;
+    background-color: rgb(224, 167, 92);
+}
+
+input {
+    background-color: burlywood;
+ }
+
+textarea {
+    background-color: burlywood;
+ }
+  textarea::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgb(224, 167, 92);
+ }
+  
+  textarea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: black; 
+}
+
+#enviar{
+    background-color:burlywood ;
+    font-size: 25px;
+}
+#enviar:hover{
+    color:chocolate;
+    background-color: rgb(224, 167, 92);
+    font-size: 24px;
+  }
+.opacity:hover{
+     opacity: 0.7;
+   }
+ #rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+}
