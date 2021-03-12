@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="assests/style.css">
+    <link rel="stylesheet" href="assests/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
@@ -8,29 +10,74 @@
 </head>
 
 <body style="background: burlywood; font-family: sans-serif;">
+
     <nav>
-        <ul >
-            <li style="font-family: sans-serif;"><button><a href="index.html">HOME</a></button></li>
-            <li style="font-family: sans-serif;"><button><a href="playlist.html">PLAYLIST</a></button></li>
-            <li style="font-family: sans-serif;"><button><a href="contato.html">CONTATO</a></button></li>
+        <ul id="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="playlist.html">PLAYLIST</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
         </ul>
     </nav>
 
-<article >
-    <h1>Onde Me Encontrar</h1>
-    <h2>Mande Uma Cartinha Eletronica</h2>
-    <form >
-        <label for="nome">Seu Nome</label>
-        <input type="text" id="nome">
-        <label for="email">Seu Email</label>
-        <input type="email" id="email"><br>
-        <label for="assunto">Escreva Sua Cartinha Para Mim</label><br>
-        <textarea name="assunto" id="assunto" cols="70" rows="10"></textarea><br>
-        <button style="background-color: blueviolet">Enviar</button>
-    </form>
-    <br><br><br><br><br><br>
-    <img src="assests/img/github.png" width="50" height="50" alt="Logo do GitHuB" >
-    <a href="https://github.com/Beatriz-Oliveira-Dev"><article>Beatriz</article> </a>
-</article>   
+<div class="container"> 
+
+    <div class="p-30" id="sobremim"> 
+
+        <h2 class="titulo" >AstroTerra Agradece</h2>
+        
+        <article class="texto-lateral" >
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis.
+            Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Diuretics
+            paradis num copo é motivis de denguis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur.
+            Sed non ipsum felis.!
+            </p>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis.
+            Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Diuretics
+            paradis num copo é motivis de >denguis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur.
+            Sed non ipsumfelis.
+            </p>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis.
+            Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Diuretics
+            paradis num copo é motivis de denguis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur.
+            Sed non ipsumfelis.
+            </p>
+        </article>
+    
+        <h2 class="titulo">Até A Proxima Viajem!</h2>
+    
+    </div>
+
+    <div class="p-30">
+        <article>
+            <h1>Onde Me Encontrar</h1>
+            <h2 class="titulo">Mande Uma Cartinha Eletronica</h2>
+            <form >
+                <label for="nome" class="titulo">Seu Nome</label>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
+                <label for="email" class="titulo">Seu Email</label>
+                <input type="email" id="email" onkeyup='validaEmail()'><br>
+                <div id="txtEmail"></div>
+                <label for="assunto" class="titulo">Escreva Para Mim</label><br>
+                <textarea name="assunto" id="assunto" cols="93" rows="10" onkeyup="validaAssunto()"></textarea><br>
+                <div id="txtAssunto"></div>
+                <button id="enviar" onclick='enviarForm()'>Enviar</button>
+            </form>
+        </article>  
+    </div>
+</div>
+<hr>
+    <div>
+        <footer id="rodape" class="container">
+            <a class="opacity p-30" href="https://github.com/Beatriz-Oliveira-Dev" target="_blank"><img src="assests/img/github1.png" alt="Logo do github" width="100px" height="100px"></a>
+            <a class="opacity p-30" href="https://www.instagram.com/beatrizlso/?hl=pt-br" target="_blank"><img src="assests/img/instagram (1).png" alt="Logo do github" width="100px" height="100px"></a>
+            <a class="opacity p-30" href="https://www.linkedin.com/in/beatriz-l-88ab81117/" target="_blank"><img src="assests/img/linkedin (1).png" alt="Logo do github" width="100px" height="100px"></a><br>
+            
+        </footer>
+        <p style="text-align: center;">Todos os direitos: Beatriz Oliveira &copy;</p>
+    </div>
+
+<script src="assests/script.js"></script>
+
 </body>
 </html>
